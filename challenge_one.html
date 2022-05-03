@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de texto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="container voxel">
+  
+    <div class="container-left w-70">
+  
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo">
+      </div>
+  
+      <div class="section voxel column-flex">
+        <div class="section-text w-100">
+          <textarea class="texto" id="texto" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+  
+        <div class="footer voxel column-flex w-100">
+          <div class="info"><span></span>Sólo letras minúsculas y sín acento.</div>
+          <div class="buttons">
+            <button class="btn-encriptar" id="encriptar">Encriptar</button>
+            <button class="btn-desencriptar" id="desencriptar">
+              <D></D>Desencriptar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container-right voxel column-flex w-20px">
+      <div class="div-resultado voxel column-flex w-100" id="div-resultado" style="display:none">
+        <textarea id="mensaje" style="display:none"></textarea>
+        <div id="resultado" class="resultado" style="width: 100%">fff</div>
+        <button class="btn-copy" id="copy">Copiar</button>
+      </div>
+  
+      <div class="contenido-inicial" id="contenido-inicial">
+        <img src="assets/munieco.jpg" alt="muñeco">
+        <h3>Encontramos tu mensaje</h3>
+        <p>Ingrese el texto que desee encriptar o desencriptar</p>
+      </div>
+    </div>
+  
+  </div>
+  
+  <div class="section-footer voxel w-100">
+    <div class="content-footer voxel w-70">
+      <img src="assets/logo_oracleAlura-es_branca.1647533644.svg" alt="oracle + alura">
+      <p class="artist">Alejandro Martin Rios</p>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+  </body>
+  
+  </html>
